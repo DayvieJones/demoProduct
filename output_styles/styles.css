@@ -5,6 +5,10 @@
   font-family: "Istok Web", sans-serif;
 }
 
+body {
+  background-color: #cccccc;
+}
+
 .product-section {
   max-width: 1100px;
   margin: 0 auto;

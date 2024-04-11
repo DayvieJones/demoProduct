@@ -8,6 +8,10 @@ $secondary-color: #212121;
   font-family: "Istok Web", sans-serif;
 }
 
+body {
+  background-color: darken(white, 20);
+}
+
 .product-section {
   max-width: 1100px;
   margin: 0 auto;
