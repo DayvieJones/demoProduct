@@ -1,0 +1,140 @@
+@import url("https://fonts.googleapis.com/css2?family=Istok+Web:wght@400;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Istok Web", sans-serif;
+}
+
+.product-section {
+  max-width: 1100px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.product-section__header {
+  font-size: 2.4rem;
+  border-bottom: 2px solid #ffce00;
+}
+.product-section__product-list {
+  display: flex;
+  gap: 1rem;
+}
+.product-section__further-button {
+  margin-top: 2rem;
+  padding: 1.2rem 2rem;
+  background-color: #ffce00;
+  border: 1px solid #212121;
+  border-radius: 5px;
+  color: black;
+  text-decoration: none;
+  transition: all 0.2 ease-in-out;
+}
+.product-section__further-button:hover {
+  background-color: #ffeb99;
+}
+
+.product {
+  width: 20rem;
+  height: 29rem;
+  margin: 4rem;
+  border: 1px solid rgba(0, 0, 0, 0.3);
+  border-radius: 5px;
+  background: #212121;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  position: relative;
+}
+.product::before {
+  content: "";
+  position: absolute;
+  top: -3rem;
+  right: 0;
+  height: 17rem;
+  width: 20rem;
+  background: #ffd833;
+  transform: skewY(350deg);
+  transition: 0.5s;
+}
+.product:hover::before {
+  transform: skewY(375deg);
+  top: -7rem;
+}
+.product:hover__button {
+  opacity: 1;
+  transform: translateY(-2rem);
+}
+.product__image-box {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 10rem;
+  width: 20rem;
+  color: white;
+  padding-top: 20px;
+  margin-bottom: 4rem;
+  z-index: 1;
+}
+.product__image {
+  position: absolute;
+  height: 12rem;
+  width: 15rem;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  z-index: 1;
+}
+.product__info {
+  padding: 1rem;
+}
+.product__name {
+  margin: 0.5rem 0 0 0;
+  color: rgb(255, 255, 255);
+}
+.product__description {
+  margin-top: 0.5rem;
+  color: rgba(255, 255, 255, 0.8);
+}
+.product__price-wrapper {
+  margin-top: 1rem;
+}
+.product__price {
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: rgb(255, 255, 255);
+}
+.product__price--old-price {
+  color: red;
+  text-decoration: line-through;
+  font-size: 0.9rem;
+  margin-left: 0.7rem;
+}
+.product__button {
+  position: absolute;
+  bottom: 0.5rem;
+  left: 5rem;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.5rem;
+  height: 2rem;
+  width: 8em;
+  border-radius: 5rem;
+  border: 1px solid rgba(255, 255, 255, 0.8);
+  text-decoration: none;
+  color: rgb(255, 255, 255);
+  transition: transform 0.5s, opacity 0.5s;
+  background-color: #ffce00;
+  color: #212121;
+  border: #ffce00;
+}
+.product__button:hover {
+  cursor: pointer;
+  background-color: #ffeb99;
+}
+
+/*# sourceMappingURL=styles.css.map */

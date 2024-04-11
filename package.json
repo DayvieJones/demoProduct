@@ -1,0 +1,16 @@
+{
+  "name": "beliebige-produkte",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "scss": "sass --watch styles:output_styles"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "sass": "^1.74.1"
+  }
+}
