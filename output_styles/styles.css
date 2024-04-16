@@ -6,7 +6,7 @@
 }
 
 body {
-  background-color: #cccccc;
+  background-color: #b3b3b3;
 }
 
 .product-section {
@@ -49,6 +49,7 @@ body {
   flex-direction: column;
   overflow: hidden;
   position: relative;
+  color: white;
 }
 .product::before {
   content: "";
@@ -76,7 +77,6 @@ body {
   justify-content: center;
   height: 10rem;
   width: 20rem;
-  color: white;
   padding-top: 20px;
   margin-bottom: 4rem;
   z-index: 1;
@@ -95,7 +95,6 @@ body {
 }
 .product__name {
   margin: 0.5rem 0 0 0;
-  color: rgb(255, 255, 255);
 }
 .product__description {
   margin-top: 0.5rem;
@@ -107,7 +106,6 @@ body {
 .product__price {
   font-size: 1.2rem;
   font-weight: 600;
-  color: rgb(255, 255, 255);
 }
 .product__price--old-price {
   color: red;
@@ -116,11 +114,7 @@ body {
   margin-left: 0.7rem;
 }
 .product__button {
-  position: absolute;
-  bottom: 0.5rem;
-  left: 5rem;
-  margin-left: auto;
-  margin-right: auto;
+  margin: 0 auto;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -130,7 +124,6 @@ body {
   border-radius: 5rem;
   border: 1px solid rgba(255, 255, 255, 0.8);
   text-decoration: none;
-  color: rgb(255, 255, 255);
   transition: transform 0.5s, opacity 0.5s;
   background-color: #ffce00;
   color: #212121;
